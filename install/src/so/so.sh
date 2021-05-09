@@ -59,5 +59,7 @@ sudo apt upgrade
 sudo apt-get update -y
 sudo apt-get install -y sshpass
 
+sudo apt  install curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
 
