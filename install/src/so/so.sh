@@ -36,7 +36,28 @@ sudo apt install smplayer
 sudo apt install vlc
 sudo apt-get install krita
 sudo apt-get install notepadqq
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt update
+sudo apt install google-chrome-stable
 
+#Instalacion de conky
+sudo apt-get install conky-all
+sudo apt-get install lm-sensors
+sudo sensors-detect
+	
+#Instalacion de VSC
+sudo snap install --classic code
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+sudo apt update
+sudo apt upgrade
+
+sudo apt-get update -y
+sudo apt-get install -y sshpass
 
 
 

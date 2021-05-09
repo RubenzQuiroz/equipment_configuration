@@ -4,6 +4,7 @@ echo "Inicio y configuracion de java "
 sudo apt install default-jre
 sudo apt install default-jdk
 
+sudo nano /etc/environment
 
 
 echo "Instalando Spring CLI"
