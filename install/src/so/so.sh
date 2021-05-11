@@ -62,4 +62,5 @@ sudo apt-get install -y sshpass
 sudo apt  install curl
 sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
+sudo apt install net-tools
 
