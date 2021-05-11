@@ -9,6 +9,7 @@ sudo apt install default-jdk
 ORACLE_BIN=$HOME/Documentos/setup/java/linux/oracle
 OPENJDK_BIN=$HOME/Documentos/setup/java/linux/openjdk
 CLI_BIN=$HOME/Documentos/setup/java/Spring/CLI
+STS=$HOME/Documentos/setup/java/Spring/sts
 
 #ORACLE
 echo "Instalando JDK ORACLE"
@@ -103,3 +104,9 @@ mv  spring-2.4.5 $HOME/Documentos/libs/java/spring/cli/spring-2.4.5
 sudo cp /etc/bash.bashrc /etc/bash.bashrc.back
 sudo sed -i '$a SPRING_CLI_HOME=$HOME/Documentos/libs/java/spring/cli/spring-2.4.5' /etc/bash.bashrc
 sudo sed -i '$a PATH=$PATH:$HOME/bin:$SPRING_CLI_HOME/bin' /etc/bash.bashrcr
+
+echo "Instalando Spring boot"
+cd $STS
+tar xf spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-linux.gtk.x86_64.tar.gz
+sudo mv sts-4.10.0.RELEASE /opt/sts-4.10.0.RELEASE
+sudo cp sts.desktop  /usr/share/applications/sts.desktop
